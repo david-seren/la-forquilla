@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <div id="menuDelDia">
+      <h2 id="h-menu-dia" class="titulo-menu-dia">Menú del día</h2>
+      <p id="precio">Menú completo · 18.90<span class="euros">€</span></p>
+      <h3 class="titulo-diurno">Primeros platos</h3>
+      <ul class="lista-menu-dia" id="primeros"></ul>
+      <h3 class="titulo-diurno">Segundos platos</h3>
+      <ul class="lista-menu-dia" id="segundos"></ul>
+      <h3 class="titulo-diurno">Postres</h3>
+          <ul class="lista-menu-dia" id="postres"></ul>
+      <h3 class="titulo-diurno">Incluye</h3>    
+      <ul class="lista-menu-dia" id="incluye"></ul>
+      <div class="body">
+        
+      <!-- ALLERGENS -->
+      <div class="allergens">
+        <div class="allergen-title">Alérgenos presentes</div>
+        <div class="allergen-tags">
+          <span class="a-tag">Gluten<span class="a-num"> ( 1 ) </span> </span>
+          <span class="a-tag">Lactosa<span class="a-num"> ( 2 )</span></span>
+          <span class="a-tag">Frutos secos<span class="a-num"> ( 3 )</span></span>
+        </div>
+        <p class="advisory">Si tienes alguna alergia o intolerancia, consúltanos</p>
+      </div>
+
+      
+
+    <!-- EXTRAS -->
+     <div class="anade"><h3>Añade</h3></div>
+      <div class="extras">
+        
+        <div class="extra-pill">
+          <span class="pill-label">Dos primeros</span>
+          <div class="pill-value">+<span>1 €</span></div>
+        </div>
+        <div class="extra-pill">
+          <span class="pill-label">Dos segundos</span>
+          <div class="pill-value">+<span>2'50 €</span></div>
+        </div>
+      </div>
+      <div class="gold-rule"></div>
+    </div>
+  </div>
+
+</section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+<script src="JS/script.js"></script>
+</body>
+</html>

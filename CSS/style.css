@@ -1,0 +1,1335 @@
+/* ============================================================
+   LA FORQUILLA — style.css
+   Orden: variables → base → componentes según flujo del HTML
+   ============================================================ */
+
+
+/* ── 1. VARIABLES ─────────────────────────────────────────── */
+
+:root {
+  --primary:               #c59c5f;
+  --menu-dia:              #fffceb;
+  --borones-y-menu:        #ffd895;
+  --bg-menu:               #1a1a1af6;
+  --titulos-menu-nocturno: #ffd895;
+  --linea-titulos:         #c49039;
+  --platos-y-precios:      #f5f5f5;
+  --text:                  #222;
+  --muted:                 #5b5b5b;
+  --titulos-fuente:        'Playfair Display', serif;
+}
+
+
+/* ── 2. BASE ──────────────────────────────────────────────── */
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  color: var(--text);
+  background-color: #fff7e2;
+}
+
+h2 {
+  font-family: var(--titulos-fuente);
+  font-size: 1.6em;
+  font-weight: 500;
+  border-bottom: 3px solid var(--linea-titulos);
+  
+  padding-bottom: 0.4em;
+}
+
+h3 {
+  font-family: var(--titulos-fuente);
+}
+
+h4 {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: var(--borones-y-menu);
+}
+
+p {
+  padding: 0.65em;
+  line-height: 1.4em;
+}
+
+section {
+  padding: 30px 20px;
+  text-align: center;
+}
+
+svg {
+  margin-top: 6px;
+}
+
+iframe {
+  width: 100%;
+  max-width: 600px;
+  height: 250px;
+  border: 0;
+}
+
+
+/* ── 3. UTILIDADES ────────────────────────────────────────── */
+
+.bold {
+  font-weight: bold;
+}
+
+.gold {
+  color: var(--linea-titulos);
+  font-size: 1.2em;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 1.5px;
+}
+
+.goldDos {
+  color: var(--linea-titulos);
+}
+
+.ig-gold {
+  color: var(--borones-y-menu);
+}
+
+.euros {
+  font-size: 0.7em;
+}
+
+
+/* ── 4. HERO ──────────────────────────────────────────────── */
+
+.hero {
+  position: relative;
+  min-height: 42vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 2em;
+  color: #fff;
+  background: url(../IMG/forquilla-interiordos.jpg) center/cover no-repeat;
+  overflow: hidden;
+  transition: background 0.3s ease, backdrop-filter 0.3s ease;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.25));
+  z-index: 0;
+}
+
+.hero > * {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.8rem;
+  font-weight: 300;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  margin: 1rem 0 1.2rem;
+  color: var(--titulos-menu-nocturno);
+  text-shadow: 1px 1px 1px #ffffff45;
+}
+
+.hero h2 {
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 600;
+  line-height: 1.1;
+  border-bottom: none;
+  margin: 0 auto;
+}
+
+.hero .subtitle {
+  font-size: 0.7rem;
+  font-weight: 200;
+  opacity: 0.9;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 3px rgba(0,0,0,0.9);
+  color: #ffffff;
+}
+
+
+/* ── 5. #header-bottm ────────────────────────────────────── */
+
+#header-bottm {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 0.5em;
+  margin-top: 7em;
+}
+
+#header-bottm h2 {
+  font-size: .8em;
+  font-family: 'Inter', sans-serif;
+  font-weight: 100;
+  opacity: 0.85;
+}
+
+
+/* ── 6. BOTONES HERO ─────────────────────────────────────── */
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  flex-direction: column;
+  margin-bottom: 2em;
+}
+
+.buttons a {
+  font-family: 'Inter', sans-serif;
+  padding: 12px 16px;
+  text-decoration: none;
+  background: #ffffbf;
+  color: #ffffff;
+  border: 1px solid;
+  border-radius: 6px;
+  text-transform: uppercase;
+}
+
+.primary {
+  background: var(--primary);
+  color: #fff;
+}
+
+#reservar {
+  background-color: #00000094;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+
+/* ── 7. #descubre ────────────────────────────────────────── */
+
+#descubre {
+  padding: 0 0 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+#descubre > p {
+  color: var(--borones-y-menu);
+  letter-spacing: 4px;
+  text-shadow: 1px 2px 3px rgb(0 0 0);
+  margin: 0;
+  font-size: 0.8em;
+}
+
+.descubre-arrow {
+  width: 1px;
+  height: 24px;
+  background: currentColor;
+  color: var(--borones-y-menu);
+  position: relative;
+  animation: descubre-line 1.4s ease-in-out infinite;
+  opacity: 0;
+}
+
+.descubre-arrow::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: -3px;
+  width: 7px;
+  height: 7px;
+  border-right: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
+  transform: rotate(45deg);
+}
+
+@keyframes descubre-line {
+  0%   { opacity: 0; transform: translateY(-8px); }
+  30%  { opacity: 1; }
+  70%  { opacity: 1; }
+  100% { opacity: 0; transform: translateY(8px); }
+}
+
+
+/* ── 8. NAV ──────────────────────────────────────────────── */
+
+.lf-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 56px;
+  background: #1a1a1a85;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  z-index: 1000;
+  transition: background 0.3s ease, border-color 0.3s ease, backdrop-filter 0.3s ease;
+}
+
+.lf-nav.scrolled {
+  background: rgba(5,5,5,0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid #1a1a1a;
+}
+
+.lf-nav__logo {
+  font-family: Georgia, serif;
+  font-size: 14px;
+  letter-spacing: 0.15em;
+  color: #e8e0d0;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+
+/* ── 9. HAMBURGUESA ──────────────────────────────────────── */
+
+.lf-burger {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 5px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.lf-burger span {
+  display: block;
+  height: 1px;
+  background: #888;
+  transition: all 0.3s ease;
+}
+
+.lf-burger span:nth-child(1) { width: 18px; }
+.lf-burger span:nth-child(2) { width: 28px; }
+.lf-burger span:nth-child(3) { width: 18px; }
+
+.lf-burger.is-open span:nth-child(1) {
+  width: 22px;
+  transform: rotate(45deg) translate(4px, 4px);
+  background: #B8860B;
+}
+.lf-burger.is-open span:nth-child(2) {
+  opacity: 0;
+  width: 0;
+}
+.lf-burger.is-open span:nth-child(3) {
+  width: 22px;
+  transform: rotate(-45deg) translate(4px, -4px);
+  background: #B8860B;
+}
+
+
+/* ── 10. BOTÓN WHATSAPP FLOTANTE ─────────────────────────── */
+
+.lf-wa-btn {
+  position: fixed;
+  bottom: 16px;
+  right: 24px;
+  width: 52px;
+  height: 52px;
+  border-radius: 26%;
+  background: var(--linea-titulos);
+  border: 1px solid #28701f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1001;
+  text-decoration: none;
+  transition: border-color 0.2s;
+}
+
+.lf-wa-btn:hover {
+  border-color: #B8860B;
+}
+
+.lf-wa-btn svg path {
+  stroke: var(--platos-y-precios);
+  transition: stroke 0.2s;
+}
+
+.lf-wa-btn:hover svg path {
+  stroke: #B8860B;
+}
+
+
+/* ── 11. OVERLAY MENÚ ────────────────────────────────────── */
+
+.lf-menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #050505;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 56px;
+  transform: translateX(100%);
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  visibility: hidden;
+}
+
+.lf-menu-overlay.is-open {
+  transform: translateX(0);
+  visibility: visible;
+}
+
+.lf-menu-items {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 40px 0;
+}
+
+.lf-menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 0;
+  border-bottom: 1px solid #141414;
+  cursor: pointer;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.lf-menu-item:first-child {
+  border-top: 1px solid #141414;
+}
+
+.lf-menu-item:hover .lf-menu-item__label {
+  color: #e8e0d0;
+}
+
+.lf-menu-item:hover .lf-menu-item__arrow {
+  color: #B8860B;
+  transform: translateX(4px);
+}
+
+.lf-menu-item__num {
+  font-family: Georgia, serif;
+  font-size: 10px;
+  color: #333;
+  letter-spacing: 0.1em;
+  width: 24px;
+}
+
+.lf-menu-item__label {
+  font-family: Georgia, serif;
+  font-size: 22px;
+  color: #666;
+  letter-spacing: 0.04em;
+  flex: 1;
+  padding: 0 20px;
+  transition: color 0.2s;
+}
+
+.lf-menu-item__arrow {
+  font-size: 18px;
+  color: #222;
+  font-family: Georgia, serif;
+  transition: color 0.2s, transform 0.2s;
+}
+
+.lf-menu-footer {
+  padding: 32px 40px;
+  margin-top: auto;
+  border-top: 1px solid #0f0f0f;
+}
+
+.lf-menu-footer__text {
+  font-family: Georgia, serif;
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  color: #2a2a2a;
+  text-transform: uppercase;
+}
+
+.lf-menu-footer__hours {
+  list-style: none;
+  margin: 10px 0 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.lf-menu-footer__hours li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  font-family: Georgia, serif;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: #3a3a3a;
+}
+
+.lf-menu-footer__hours li span:first-child {
+  color: #555;
+  white-space: nowrap;
+}
+
+.lf-menu-footer__address {
+  font-family: Georgia, serif;
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  color: #222;
+  text-transform: uppercase;
+  margin-top: 4px;
+}
+
+
+/* ── 12. SECCIÓN EXPERIENCE ──────────────────────────────── */
+
+.experience p {
+  color: var(--muted);
+  line-height: 1.5em;
+}
+
+.experience p:first-child {
+  font-size: 22px;
+}
+
+#botonesDeMenus {
+  margin: auto;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 300px;
+  text-align: center;
+}
+
+.botonesDeMenus {
+  padding: 12px 16px;
+  border: 1px solid var(--muted);
+  color: var(--bg-menu);
+  font-size: 1.2em;
+  font-weight: 600;
+  font-family: 'Cormorant Garamond', serif;
+  text-decoration: none;
+  border-radius: 14px;
+  background: var(--titulos-menu-nocturno);
+  scroll-behavior: smooth;
+}
+
+.resenas-dos {
+  border-radius: 14px;
+  padding: 2rem;
+}
+
+.resenas-dos a {
+  text-decoration: none;
+}
+
+.nota-google {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-right: 5px;
+}
+
+.estrellas-g {
+  color: #f1b834;
+  margin-right: 5px;
+}
+
+.total-resenas {
+  color: #666;
+  font-size: 0.85rem;
+}
+
+/* .experience-media-container-left solo se define en tablet y desktop (ver media queries) */
+
+.experienci-media-container-right {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* ── 13. DISH FIGURE ─────────────────────────────────────── */
+
+.dish-figure {
+  margin: 1em 0 2em;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #1a1a1a;
+  max-width: 450px;
+}
+
+.dish-figure img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  display: block;
+}
+
+.dish-caption {
+  font-family: 'Inter', sans-serif;
+  padding: 14px 26px;
+  background: #1a1a1a;
+  color: #f2f2f2;
+  font-size: 0.90rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+#experience-img,
+#experience-img-dos {
+  max-width: 450px;
+}
+
+
+/* ── 14. SECCIÓN MENÚ DEL DÍA ────────────────────────────── */
+
+.micro-info {
+  margin-bottom: 1em;
+  color: var(--muted);
+  font-family: 'Inter', sans-serif;
+}
+
+#menuDelDia {
+  background: var(--menu-dia);
+  border-radius: 14px;
+  padding: 1em 1em;
+  border: 4px solid var(--linea-titulos);
+  text-align: center;
+}
+
+.titulo-menu-dia {
+  font-family: var(--titulos-fuente);
+  font-size: 1.7em;
+  text-align: center;
+}
+
+#h-menu-dia {
+  margin-top: 1.5rem;
+}
+
+#precio {
+  color: var(--muted);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.3em;
+}
+
+.titulo-diurno {
+  font-size: 1.4rem;
+  padding: 1em 0;
+}
+
+.lista-menu-dia {
+  list-style: none;
+  background-color: #fff7e2;
+  padding: 2em 1em;
+  border-radius: 12px;
+  border: 1px solid var(--text);
+}
+
+.lista-menu-dia li {
+  font-family: 'Montserrat', sans-serif;
+  padding: 5px;
+  line-height: 1.5em;
+}
+
+.anade {
+  font-size: 1.4em;
+  font-family: var(--titulos-fuente);
+  padding: 1em;
+}
+
+.extras {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.extra-pill {
+  display: flex;
+  flex-direction: row;
+  gap: 0.6em;
+  justify-content: center;
+}
+
+.gold-rule {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold, var(--linea-titulos)), transparent);
+  margin: 1.2rem 0;
+}
+
+.allergens {
+  color: var(--platos-y-precios);
+  background-color: #bb0000;
+  padding: 0.5em;
+  margin: 0 ;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6em;
+  border-radius: 12px;
+  margin-top: 1rem;
+}
+
+.allergen-title {
+  font-family: var(--titulos-fuente);
+  font-size: 1.2em;
+  font-weight: 500;
+  margin-bottom: 0.5em;
+}
+
+.allergen-tags {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1em;
+}
+
+.allergen-tags > span {
+  line-height: 1.4em;
+}
+
+.allergens > p {
+  padding: 0;
+}
+
+.a-tag {
+  line-height: 1.4em;
+}
+
+.a-num {
+  font-style: italic;
+  font-size: 0.7em;
+}
+
+.advisory {
+  font-size: .75rem;
+  color: var(--platos-y-precios);
+  text-align: center;
+  font-style: italic;
+  margin-bottom: .5rem;
+  line-height: 1.5;
+}
+
+.footerMenuDia {
+  font-style: italic;
+  color: var(--muted);
+  display: flex;
+  flex-direction: column;
+  gap: 1.4em;
+  text-align: center;
+  align-items: center;
+  border-radius: 12px;
+}
+
+
+/* ── 15. CTA ─────────────────────────────────────────────── */
+
+.cta {
+  background: var(--bg-menu);
+  color: #fff;
+  margin: 0;
+}
+
+.cta h2 {
+  font-size: 1.35em;
+}
+
+.cta a {
+  display: inline-block;
+  margin: 1em 0;
+  padding: 16px 20px;
+  background: var(--bg-menu);
+  color: var(--titulos-menu-nocturno);
+  border: 1px solid var(--linea-titulos);
+  text-decoration: none;
+  border-radius: 12px;
+}
+
+
+/* ── 16. SECCIÓN MENÚ NOCTURNO ───────────────────────────── */
+
+.menu {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0.8em 2em 2em;
+  line-height: 1.4em;
+  margin: 0;
+  border-radius: 0 0 12px 12px;
+  background: var(--bg-menu);
+  color: var(--platos-y-precios);
+}
+
+.menu li {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1px;
+  padding: 10px 0;
+  border-bottom: 1px solid #ffd895;
+  font-size: 1em;
+}
+
+.menu .plato {
+  flex: 1;
+  text-align: left;
+}
+
+.menu .precio {
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.menu img {
+  width: 100%;
+  max-width: 100%;
+  height: 308px;
+  object-fit: cover;
+  display: block;
+  border-radius: 12px 12px 0 0;
+}
+
+.menu .dish-figure {
+  margin: 2em auto;
+}
+
+#menu-nocturno h2 {
+  margin-top: 1.5rem;
+}
+
+.intro {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.4em;
+}
+
+.titulo-nocturno {
+  font-family: var(--titulos-fuente);
+  font-size: 1.4em;
+  font-weight: 700;
+  color: var(--titulos-menu-nocturno);
+  margin-top: 1em;
+  padding: 1.2em 0;
+  background: var(--bg-menu);
+  border-radius: 12px 12px 0 0;
+}
+
+.subtitulo-mn {
+  font-size: 0.9em;
+  background-color: var(--linea-titulos);
+  padding: 1em;
+}
+
+.style-uds {
+  font-size: .9em;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #a0a0a0;
+  font-style: italic;
+}
+
+.simboloEuro {
+  font-size: 0.9em;
+  font-family: 'Cormorant Garamond', serif;
+  margin-left: 3px;
+}
+
+
+/* ── 17. TESTIMONIOS ─────────────────────────────────────── */
+
+.seccion-testimonios {
+  padding: 40px 20px;
+  background-color: #fcfbfa;
+  text-align: center;
+}
+
+.google-rating-resumen {
+  margin-bottom: 25px;
+  font-size: 0.95rem;
+  color: #2c3033;
+}
+
+.testimonios-viewport {
+  position: relative;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.tarjeta-testimonio {
+  display: none;
+  background-color: var(--menu-dia);
+  border-radius: 16px;
+  padding: 25px 20px;
+  border: 0.4em solid var(--linea-titulos);
+  box-shadow: 0 4px 15px rgba(0,0,0,.04);
+  animation: fadeIn .4s ease;
+}
+
+.tarjeta-testimonio.activa {
+  display: block;
+}
+
+.estrellas-cliente {
+  color: #f1b834;
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+}
+
+.texto-testimonio {
+  color: #2c3033;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.autor-testimonio {
+  display: block;
+  color: #8c9298;
+  font-size: .8rem;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+}
+
+.slider-controls {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 18px;
+}
+
+.slider-controls button {
+  width: 26px;
+  height: 26px;
+  border: none;
+  border-radius: 6px;
+  background: var(--linea-titulos);
+  color: white;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: transform .2s ease;
+}
+
+.slider-controls button:hover {
+  transform: scale(1.08);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateX(15px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+
+/* ── 18. INSTAGRAM ───────────────────────────────────────── */
+
+#ig {
+  padding: 0 20px;
+}
+
+.instagram-discovery {
+  width: 100%;
+  max-width: 700px;
+  background-color: var(--bg-menu);
+  margin: 0 auto;
+  padding: 1.5rem 0 3rem;
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  border-radius: 14px;
+}
+
+.instagram-discovery > p {
+  color: var(--linea-titulos);
+}
+
+.instagram-mini-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--platos-y-precios);
+  margin-bottom: 0.7rem;
+  letter-spacing: 0.5px;
+  padding: 0 0 0.65em;
+}
+
+.instagram-discovery a {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: var(--linea-titulos);
+  text-decoration: none;
+  opacity: 0.75;
+  border: 1px solid var(--muted);
+  padding: 0.7em;
+  border-radius: 10px;
+  transition: opacity 0.25s ease, letter-spacing 0.25s ease;
+}
+
+.instagram-discovery a:hover {
+  opacity: 1;
+  letter-spacing: 1px;
+}
+
+
+/* ── 19. MAPA ────────────────────────────────────────────── */
+
+.map h2 {
+  font-size: 1.4em;
+}
+
+.map p {
+  padding: 1.2em;
+}
+
+
+/* ── 20. FOOTER ──────────────────────────────────────────── */
+
+.footer {
+  padding: 40px 20px;
+  background: var(--bg-menu);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4em;
+  text-align: center;
+  align-items: center;
+}
+
+.footer p {
+  margin: 4px 0;
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+.footer p a {
+  color: var(--platos-y-precios);
+  text-decoration: none;
+}
+
+.footer-brand p {
+  font-size: 0.9rem;
+  opacity: 0.75;
+}
+
+.footer-contact p {
+  display: flex;
+    align-items: center;
+    gap: 0.4em;
+    justify-content: center;
+}
+
+.footer-hours p {
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+.footer-social {
+  margin-top: 10px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 6px;
+}
+
+.social-icon {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #222;
+  border-radius: 10px;
+  color: #fff;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.social-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.social-icon:hover {
+  background: #444;
+  transform: translateY(-2px);
+}
+
+
+/* ── 21. ICONOS SVG ──────────────────────────────────────── */
+
+.lf-icon {
+  color: #888888;
+  transition: color 0.2s ease;
+}
+
+.lf-icon:hover,
+a:hover .lf-icon,
+button:hover .lf-icon {
+  color: #B8860B;
+}
+
+
+/* ═══════════════════════════════════════════════════════════
+   MEDIA QUERIES
+   ═══════════════════════════════════════════════════════════ */
+
+
+/* ── TABLET (768px – 1023px) ─────────────────────────────── */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+  section {
+    padding: 2em 2em;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  #botonesDeMenus {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-direction: row;
+    max-width: 400px;
+    text-align: center;
+  }
+
+  .botonesDeMenus {
+    flex: 1;
+  }
+
+   .allergens {
+    margin: 1em 1em;
+   }
+
+  .contenedor-grande-experience {
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+    margin-bottom: 3em;
+  }
+
+  .experience-media-container-left {
+    display: flex;
+    grid-template-columns: 1.2fr 1fr;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+  }
+
+  .experienci-media-container-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 420px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-top: 1em;
+    flex-direction: row;
+  }
+
+  .dish-figure img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    display: block;
+  }
+
+  #wagyu {
+    display: none;
+  }
+
+  .instagram-discovery {
+    width: 90%;
+    max-width: 700px;
+    background-color: var(--bg-menu);
+    margin: 2rem auto;
+    padding: 1.5rem 0 3rem;
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.08);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+
+  .instagram-mini-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #d6c6a5;
+    margin-bottom: 0.7rem;
+    letter-spacing: 0.5px;
+  }
+
+  .instagram-discovery a {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: #f5f5f5;
+    text-decoration: none;
+    opacity: 0.75;
+    transition: opacity 0.25s ease, letter-spacing 0.25s ease;
+  }
+
+  .instagram-discovery a:hover {
+    opacity: 1;
+    letter-spacing: 1px;
+  }
+
+  .menu-nocturno-container {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+    margin-top: 3em;
+  }
+
+  .menu-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+  }
+
+  .menu-nocturno-container .dish-figure {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: auto;
+    justify-content: space-evenly;
+  }
+
+  .titulo-nocturno {
+    margin-top: 0;
+  }
+
+  #inverso {
+    flex-direction: row-reverse;
+  }
+
+  .menu img {
+    height: 270px;
+  }
+
+  .lista-menu-dia {
+    margin: 0 1em;
+  }
+
+  .cta {
+    background: var(--bg-menu);
+    color: #fff;
+    margin: 1em 0;
+  }
+}
+
+
+/* ── DESKTOP (1024px +) ──────────────────────────────────── */
+
+@media (min-width: 1024px) {
+
+  section {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .menu-wrapper {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+  }
+
+  #botonesDeMenus {
+    margin: auto;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-direction: row;
+    max-width: 400px;
+    text-align: center;
+  }
+
+  .botonesDeMenus {
+    flex: 1;
+  }
+
+  .menu-nocturno-container {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #first {
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+  }
+
+  .dish-figure img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .lista-menu-dia {
+    margin: 0 1em;
+  }
+
+  .allergens {
+    margin: 1em 1em;
+   }
+
+  .cta {
+    max-width: 2000px;
+    margin: auto;
+  }
+
+  
+}
+
+
+/* IMPRESION */
+
+@media print {
+    body{
+      margin: 0;
+      font-size: 14px;
+    }
+    
+    #menuDelDia {
+      margin: 6px 0;
+      padding: 0;
+    }
+
+    #menuDelDia ul {
+      margin: 0;
+      padding-left: 1em;
+    }
+
+    .lista-menu-dia {
+      border: 0 px solid var(--text);
+      padding: 0 ;
+    }
+
+    #menu-del-dia li {
+      padding: 0;
+      line-height: 1.1em;
+    }
+
+    .titulo-diurno {
+      padding: 0.2em;
+    }
+  }     

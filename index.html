@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>La Forquilla | Cocina mediterránea en Nou Barris</title>
+  <meta name="description" content="Restaurante de cocina de mercado y producto fresco en Nou Barris, Barcelona. Menú del día, tapas y platillos de temporada en La Forquilla. Reservas por WhatsApp.">
+  <link rel="stylesheet" href="CSS/reset.css">  
+  <link rel="stylesheet" href="CSS/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Fonts (OPTIMIZADO: solo 1 request por familia si puedes) -->
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"> -->
+
+<!-- ═══════════════════════════════════════════════════════════════
+LA FORQUILLA — SEO AVANZADO ESENCIAL
+Pegar completo dentro del <head> de la web
+═══════════════════════════════════════════════════════════════
+⚠️  ANTES DE PUBLICAR revisa los 5 puntos al final del archivo
+═══════════════════════════════════════════════════════════════ -->
+ 
+ 
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+BLOQUE 1 — CANONICAL + GEO TAGS
+Pegar dentro del <head>, antes de cualquier otro meta
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+ 
+  <link rel="canonical" href="https://laforquilla.com/" />
+ 
+  <meta name="geo.region"    content="ES-CT" />
+  <meta name="geo.placename" content="Nou Barris, Barcelona" />
+  <meta name="geo.position"  content="41.4410345;2.174711" />
+  <meta name="ICBM"          content="41.4410345, 2.174711" />
+ 
+  <meta name="speakable" content="description" />
+ 
+<!--  
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+BLOQUE 2 — SCHEMA JSON-LD COMPLETO
+Restaurant + FAQPage + WebSite en @graph
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+ 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+ 
+    {
+      "@type": "Restaurant",
+      "@id": "https://laforquilla.com/#restaurant",
+      "name": "La Forquilla",
+      "alternateName": [
+        "La Forquilla Barcelona",
+        "Restaurante La Forquilla Nou Barris"
+      ],
+      "description": "Restaurante de cocina de mercado y producto fresco en Nou Barris, Barcelona. Menú del día casero a 18€, tapas y platillos nocturnos de temporada los jueves y viernes por la noche. Reservas por WhatsApp.",
+      "url": "https://laforquilla.com",
+      "telephone": "+34932764005",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+34932764005",
+        "contactType": "reservations",
+        "availableLanguage": ["Spanish", "Catalan"]
+      },
+      "image": [
+        "https://laforquilla.com/img/restaurante.jpg",
+        "https://laforquilla.com/IMG/menu-del-dia.jpg",
+        "https://laforquilla.com/IMG/platillo-nocturno-2.jpg"
+      ],
+      "priceRange": "€€",
+      "currenciesAccepted": "EUR",
+      "paymentAccepted": "Cash, Credit Card",
+      "servesCuisine": [
+        "Cocina mediterránea",
+        "Cocina de mercado",
+        "Cocina catalana",
+        "Tapas",
+        "Cocina de temporada",
+        "Mariscos",
+        "Carnes"
+      ],
+      "menu": "https://laforquilla.com/#carta",
+      "hasMenu": {
+        "@type": "Menu",
+        "name": "Carta La Forquilla",
+        "description": "Menú del día de cocina de mercado y carta nocturna de tapas y platillos de temporada",
+        "hasMenuSection": [
+          {
+            "@type": "MenuSection",
+            "name": "Menú del día",
+            "description": "Primer plato, segundo plato y postre. Cambia cada día según el mercado.",
+            "offers": {
+              "@type": "Offer",
+              "price": "18.00",
+              "priceCurrency": "EUR"
+            }
+          },
+          {
+            "@type": "MenuSection",
+            "name": "Entrantes y Tapas",
+            "hasMenuItem": [
+              { "@type": "MenuItem", "name": "Pan de coca con tomate",            "offers": { "@type": "Offer", "price": "3.00",  "priceCurrency": "EUR" } },
+              { "@type": "MenuItem", "name": "Jamón ibérico",                     "offers": { "@type": "Offer", "price": "10.00", "priceCurrency": "EUR" } },
+              { "@type": "MenuItem", "name": "Croquetas de la casa (4 uds)",      "offers": { "@type": "Offer", "price": "8.00",  "priceCurrency": "EUR" } },
+              { "@type": "MenuItem", "name": "Boniato asado con gorgonzola",      "offers": { "@type": "Offer", "price": "9.00",  "priceCurrency": "EUR" } },
+              { "@type": "MenuItem", "name": "Queso tomino con sobrasada e higos","offers": { "@type": "Offer", "price": "10.00", "priceCurrency": "EUR" } },
+              { "@type": "MenuItem", "name": "Oreja de cerdo crujiente",          "offers": { "@type": "Offer", "price": "9.00",  "priceCurrency": "EUR" } }
+            ]
+          },
+          {
+            "@type": "MenuSection",
+            "name": "Del Mar",
+            "hasMenuItem": [
+              { "@type": "MenuItem", "name": "Corvina marinada con uva y romesco","offers": { "@type": "Offer", "price": "14.00", "priceCurrency": "EUR" } },
+              { "@type": "MenuItem", "name": "Roll de atún rojo y kimchi",        "offers": { "@type": "Offer", "price": "14.00", "priceCurrency": "EUR" } },
+              { "@type": "MenuItem", "name": "Zamburiñas al horno con foie",      "offers": { "@type": "Offer", "price": "12.00", "priceCurrency": "EUR" } },
+              { "@type": "MenuItem", "name": "Arroz de gamba roja y ceps",        "offers": { "@type": "Offer", "price": "16.00", "priceCurrency": "EUR" } },
+              { "@type": "MenuItem", "name": "Calamares salteados con habitas",   "offers": { "@type": "Offer", "price": "13.00", "priceCurrency": "EUR" } }
+            ]
+          },
+          {
+            "@type": "MenuSection",
+            "name": "Carnes y Especialidades",
+            "hasMenuItem": [
+              { "@type": "MenuItem", "name": "Montadito de steak tartar (2 uds)", "offers": { "@type": "Offer", "price": "10.00", "priceCurrency": "EUR" } },
+              { "@type": "MenuItem", "name": "Tataki de vaca madurada",           "offers": { "@type": "Offer", "price": "17.00", "priceCurrency": "EUR" } },
+              { "@type": "MenuItem", "name": "Pepito de ternera Café de París",   "offers": { "@type": "Offer", "price": "12.00", "priceCurrency": "EUR" } },
+              { "@type": "MenuItem", "name": "Canelón de pato y foie",            "offers": { "@type": "Offer", "price": "12.00", "priceCurrency": "EUR" } },
+              { "@type": "MenuItem", "name": "Gyozas de pies de cerdo (4 uds)",   "offers": { "@type": "Offer", "price": "10.00", "priceCurrency": "EUR" } },
+              { "@type": "MenuItem", "name": "Tacos de panceta teriyaki (2 uds)", "offers": { "@type": "Offer", "price": "12.00", "priceCurrency": "EUR" } }
+            ]
+          }
+        ]
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Carrer de la Font d'en Canyelles, 88",
+        "addressLocality": "Barcelona",
+        "addressRegion": "Catalunya",
+        "postalCode": "08042",
+        "addressCountry": "ES"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 41.4410345,
+        "longitude": 2.174711
+      },
+      "areaServed": [
+        { "@type": "Place", "name": "Nou Barris" },
+        { "@type": "Place", "name": "Verdun" },
+        { "@type": "Place", "name": "Canyelles" },
+        { "@type": "Place", "name": "Prosperitat" },
+        { "@type": "Place", "name": "Valldaura" },
+        { "@type": "Place", "name": "Barcelona" }
+      ],
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "13:00",
+          "closes": "16:30"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Thursday", "Friday"],
+          "opens": "20:00",
+          "closes": "23:30"
+        }
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.7",
+        "reviewCount": "751",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "potentialAction": {
+        "@type": "ReserveAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://wa.me/34932764005",
+          "actionPlatform": [
+            "http://schema.org/DesktopWebPlatform",
+            "http://schema.org/MobileWebPlatform",
+            "http://schema.org/IOSPlatform",
+            "http://schema.org/AndroidPlatform"
+          ]
+        },
+        "result": {
+          "@type": "Reservation",
+          "name": "Reserva en La Forquilla"
+        }
+      },
+      "sameAs": [
+        "https://www.instagram.com/laforquilla9/",
+        "https://www.facebook.com/LaForquilla",
+        "https://www.google.com/maps/place/La+Forquilla/@41.4410345,2.174711,17z"
+      ]
+    },
+ 
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Cuál es el horario de La Forquilla?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "La Forquilla abre de lunes a viernes para comer de 13:00 a 16:30. Los jueves y viernes también abrimos por la noche de 20:00 a 23:30 con carta de tapas y platillos de temporada. Los fines de semana permanecemos cerrados."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cómo puedo reservar mesa en La Forquilla?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Puedes reservar mesa directamente por WhatsApp al +34 932 76 40 05 o llamando al mismo número. Sin intermediarios, sin esperas."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuánto cuesta el menú del día en La Forquilla?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "El menú del día de La Forquilla cuesta 18€ e incluye primer plato, segundo plato y postre. Cambia cada día según el producto de mercado disponible."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Dónde está La Forquilla en Barcelona?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "La Forquilla está en Carrer de la Font d'en Canyelles, 88, en el barrio de Nou Barris, Barcelona (CP 08042)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué tipo de cocina ofrece La Forquilla?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cocina de mercado mediterránea con producto fresco de temporada. Menú del día casero a mediodía y tapas y platillos creativos las noches de jueves y viernes: pescados de lonja, carnes seleccionadas y especialidades de temporada."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Tiene La Forquilla carta nocturna?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. Los jueves y viernes por la noche de 20:00 a 23:30 La Forquilla ofrece carta de tapas y platillos con producto fresco: entrantes, pescados de lonja, carnes maduradas y especialidades de temporada. Precio medio por persona 23€."
+          }
+        }
+      ]
+    },
+ 
+    {
+      "@type": "WebSite",
+      "@id": "https://laforquilla.com/#website",
+      "url": "https://laforquilla.com",
+      "name": "La Forquilla",
+      "description": "Web oficial del restaurante La Forquilla en Nou Barris, Barcelona",
+      "inLanguage": "es",
+      "publisher": {
+        "@id": "https://laforquilla.com/#restaurant"
+      }
+    }
+ 
+  ]
+}
+
+</script>
+<!-- OPEN GRAPH — WhatsApp, redes sociales, previsualizaciones -->
+<meta property="og:type"        content="restaurant" />
+<meta property="og:site_name"   content="La Forquilla" />
+<meta property="og:locale"      content="es_ES" />
+<meta property="og:url"         content="https://laforquilla.com/" />
+<meta property="og:title"       content="La Forquilla | Menú del día y cocina de mercado en Nou Barris" />
+<meta property="og:description" content="Menú casero diario a 15€, cocina mediterránea y platillos nocturnos en Barcelona. 751 reseñas · 4.7★. Reserva fácil por WhatsApp." />
+<meta property="og:image"       content="https://laforquilla.com/img/restaurante.jpg" />
+<meta property="og:image:width"  content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt"   content="Restaurante La Forquilla, cocina de mercado en Nou Barris, Barcelona" />
+<meta property="og:image:type"  content="image/jpeg" />
+<meta property="og:phone_number"   content="+34932764005" />
+<meta property="og:street-address" content="Carrer de la Font d'en Canyelles, 88" />
+<meta property="og:locality"       content="Barcelona" />
+<meta property="og:region"         content="Catalunya" />
+<meta property="og:postal-code"    content="08042" />
+<meta property="og:country-name"   content="Spain" />
+
+
+</head>
+
+<body>
+
+<header class="hero">
+
+
+
+
+
+
+    <div id="header-bottm">
+
+        <p class="subtitle">Nou Barris · Barcelona</p>
+        <h1>La<br>Forquilla</h1>
+        <h2>Cocina de mercado y platillos de temporada</h2>
+        
+    </div> 
+    
+    <div class="buttons">
+        <a class="primary" id="reservar"  href="https://wa.me/34600000000">Reservar mesa</a>
+    </div>
+    
+    <div id="descubre">
+      
+      <p>Descubre</p>
+    </div>
+</header>
+
+<main>
+  
+      <!-- Nav bar -->
+<nav class="lf-nav">
+  <a href="#" class="lf-nav__logo">La Forquilla</a>
+  <button class="lf-burger" id="lf-burger" aria-label="Abrir menú" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</nav>
+<!-- Botón WhatsApp flotante -->
+<!-- ⚠️ REVISAR: sustituir el número de WhatsApp si cambia -->
+<a class="lf-wa-btn" href="https://wa.me/34932764005" target="_blank" aria-label="Reservar por WhatsApp">
+  <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M16 3C9.37 3 4 8.15 4 14.5C4 16.8 4.7 18.94 5.9 20.73L4.5 27L11.03 25.6C12.56 26.5 14.22 27 16 27C22.63 27 28 21.85 28 15.5C28 9.15 22.63 3 16 3Z" stroke-width="1.5" stroke-linejoin="round" fill="none"/>
+    <path d="M11 12.5C11 12.5 11.6 11 12.8 11.6L14 13.2C14 13.2 13.4 13.8 12.8 14.4C12.8 14.4 14.2 16.8 17 18.2C17.6 17.6 18.2 17 18.2 17L19.8 18.2C20.4 19.4 18.8 20 18.8 20C16.4 21 11 16.5 11 12.5Z" stroke-width="1.3" stroke-linejoin="round" fill="none"/>
+  </svg>
+</a>
+<!-- Overlay del menú -->
+<div class="lf-menu-overlay" id="lf-menu-overlay">
+  <nav class="lf-menu-items">
+    <a href="#menu-dia" class="lf-menu-item">
+      <span class="lf-menu-item__num">01</span>
+      <span class="lf-menu-item__label">Menú del día</span>
+      <span class="lf-menu-item__arrow">→</span>
+    </a>
+    <a href="#menu-nocturno" class="lf-menu-item">
+      <span class="lf-menu-item__num">02</span>
+      <span class="lf-menu-item__label">Platillos nocturnos</span>
+      <span class="lf-menu-item__arrow">→</span>
+    </a>
+    
+    <a href="https://wa.me/34932764005" class="lf-menu-item" target="_blank" rel="noopener">
+      <span class="lf-menu-item__num">03</span>
+      <span class="lf-menu-item__label">Reservar</span>
+      <span class="lf-menu-item__arrow">→</span>
+    </a>
+
+    <a href="https://www.google.com/maps/place/La+Forquilla/@41.4509032,2.165282,15.28z/data=!4m10!1m2!2m1!1sLa+Forquilla!3m6!1s0x12a4bd1801143e2f:0x1feefabfe9feeb59!8m2!3d41.4410345!4d2.174711!15sCgxMYSBGb3JxdWlsbGFaDiIMbGEgZm9ycXVpbGxhkgEKcmVzdGF1cmFudJoBI0NoWkRTVWhOTUc5blMwVkpRMEZuU1VRdE9IUnRTMEZSRUFF4AEA-gEECG0QQw!16s%2Fg%2F11btn16nlq?entry=ttu&g_ep=EgoyMDI2MDYwMy4xIKXMDSoASAFQAw%3D%3D" class="lf-menu-item">
+      <span class="lf-menu-item__num">04</span>
+      <span class="lf-menu-item__label">¿Donde estamos?</span>
+      <span class="lf-menu-item__arrow">→</span>
+    </a>
+
+    <a href="https://www.instagram.com/laforquilla9/" class="lf-menu-item" target="_blank" rel="noopener">
+      <span class="lf-menu-item__num">04</span>
+      <span class="lf-menu-item__label">Descubre más en instagram</span>
+      <span class="lf-menu-item__arrow">→</span>
+    </a>
+  </nav>
+  <div class="lf-menu-footer">
+    <p class="lf-menu-footer__text">Horario</p>
+    <ul class="lf-menu-footer__hours">
+      <li><span>Lun - Mie</span><span>13:00 - 16:30</span></li>
+      <li><span>Jue - Vie</span><span>13:00 - 16:30 · 20:00 - 23:30</span></li>
+      <!-- <li><span>Domingo</span><span>13:00 - 16:30</span></li> -->
+    </ul>
+    <p class="lf-menu-footer__address">Nou Barris · Barcelona</p>
+  </div>
+</div>  
+
+
+<!-- EXPEIENCIA  -->
+
+<section class="experience">
+    <div id="botonesDeMenus">
+      <a href="#menu-dia" class="botonesDeMenus">Menú del día</a>
+      <a href="#menu-nocturno" class="botonesDeMenus">Platillos nocturnos</a>
+    </div>
+    <div class="resenas-dos">
+        <span class="nota-google">4.7</span>
+        <span class="estrellas-g">★★★★★</span>
+        <a href="https://www.google.com/maps/place/La+Forquilla/@41.4509032,2.165282,15.28z/data=!4m12!1m2!2m1!1sLa+Forquilla!3m8!1s0x12a4bd1801143e2f:0x1feefabfe9feeb59!8m2!3d41.4410345!4d2.174711!9m1!1b1!15sCgxMYSBGb3JxdWlsbGFaDiIMbGEgZm9ycXVpbGxhkgEKcmVzdGF1cmFudJoBI0NoWkRTVWhOTUc5blMwVkpRMEZuU1VRdE9IUnRTMEZSRUFF4AEA-gEECG0QQw!16s%2Fg%2F11btn16nlq?entry=ttu&g_ep=EgoyMDI2MDYwMy4xIKXMDSoASAFQAw%3D%3D"><span class="total-resenas">(Más de 750 valoraciones en Google)</span></a>
+      </div>  
+    <div class="contenedor-grande-experience">
+        <div class="experience-media-container-left">
+          <h2>Cocina de mercado que cambia cada día</h2>
+    
+          <p>En <strong class="bold">La Forquilla</strong> cocinamos lo que el mercado nos ofrece cada mañana. Platos honestos, recetas a <strong class="bold">fuego lento</strong> que llenan la cocina de <strong class="bold">aromas irresistible</strong>y despiertan recuerdos de toda la vida, junto a <strong class="bold">platillos de temporada llenos de sabor</strong> auténtico para <strong class="bold">disfrutar</strong> sin prisa en Nou Barris</p>
+
+          <!-- <p>Un lugar para comer bien en el barrio y disfrutar de cenas tranquilas.</p> -->
+
+          
+        </div>
+        <div class="experienci-media-container-right" id="first">   
+            <figure class="dish-figure imgExp" id="experience-img">
+
+                <img src="IMG/pecados.jpg" alt="distintos pescados">
+
+                <figcaption class="dish-caption"><strong class="bold gold">El mar en la mesa</strong> <br> Cortes seleccionados de atún rojo, corvina salvaje y bonito del norte</figcaption>
+            </figure>
+            <figure class="dish-figure imgExp" id="wagyu">
+
+                <img  src="IMG/wayu.jpg" alt="Wayu-Japones-A5">
+                <figcaption class="dish-caption"><strong class="bold gold">Oro fundido en el paladar</strong> <br> Corte exclusivo de Wagyú Japonés A5 de infiltración suprema, que se desace en la boca como pura seda</figcaption>
+            </figure>
+        </div>
+        </div>
+    </div>
+  
+
+  
+
+  
+
+</section>
+
+
+
+<!-- MENU DEL DIA  -->
+
+<section id="menu-dia">
+    <div class="contenedor-grande-experience">
+        <div class="class="experience-media-container-left"">
+          
+        <h2>Menú del día de cocina de mercado</h2>
+          
+        <p>En <strong class="bold">La Forquilla</strong> preparamos cada día un menú de cocina de mercado con producto fresco y de temporada.</p>
+        </div>
+        <div class="experienci-media-container-right">
+            <figure class="dish-figure" id="experience-img-dos">
+
+                <img src="IMG/menu-del-dia.jpg" alt="Plato del menú del día">
+
+                <figcaption class="dish-caption"><strong class=" bold gold">Esencia de fuego y tierra</strong> <br> Crema sedosa de calabaza asada con el perfume ahumado de la alcachofa confitada y crujiente de avellanas</figcaption>
+
+            </figure>
+            
+        </div>
+        
+    </div>    
+    <p class="micro-info">Servicio de mediodía de lunes a viernes</p>
+    <div id="menuDelDia">
+      <h2 id="h-menu-dia" class="titulo-menu-dia">Menú del día</h2>
+      <p id="precio">Menú completo · 18.90<span class="euros">€</span></p>
+      <h3 class="titulo-diurno">Primeros platos</h3>
+      <ul class="lista-menu-dia" id="primeros"></ul>
+      <h3 class="titulo-diurno">Segundos platos</h3>
+      <ul class="lista-menu-dia" id="segundos"></ul>
+      <h3 class="titulo-diurno">Postres</h3>
+          <ul class="lista-menu-dia" id="postres"></ul>
+      <h3 class="titulo-diurno">Incluye</h3>    
+      <ul class="lista-menu-dia" id="incluye"></ul>
+      <div class="body">
+        
+      <!-- ALLERGENS -->
+      <div class="allergens">
+        <div class="allergen-title">Alérgenos presentes</div>
+        <div class="allergen-tags">
+          <span class="a-tag">Gluten<span class="a-num"> ( 1 ) </span> </span>
+          <span class="a-tag">Lactosa<span class="a-num"> ( 2 )</span></span>
+          <span class="a-tag">Frutos secos<span class="a-num"> ( 3 )</span></span>
+        </div>
+        <p class="advisory">Si tienes alguna alergia o intolerancia, consúltanos</p>
+      </div>
+
+      
+
+    <!-- EXTRAS -->
+     <div class="anade"><h3>Añade</h3></div>
+      <div class="extras">
+        
+        <div class="extra-pill">
+          <span class="pill-label">Dos primeros</span>
+          <div class="pill-value">+<span>1 €</span></div>
+        </div>
+        <div class="extra-pill">
+          <span class="pill-label">Dos segundos</span>
+          <div class="pill-value">+<span>2'50 €</span></div>
+        </div>
+      </div>
+      <div class="gold-rule"></div>
+    
+
+    
+      
+    
+      
+    
+      
+    
+    </div>
+  
+    <!-- FOOTER -->
+    <div class="footerMenuDia">
+      <p class="reserve-note">
+        Las mesas reservadas se guardan <strong>10 minutos</strong><br>
+        Rogamos puntualidad
+      </p>
+    </div>
+  
+  </div>
+
+</section>
+
+<section class="cta">
+  <a href="https://wa.me/34600000000">Reservar directa por <strong class="goldDos">WhatsApp →</strong></a>
+</section>
+
+
+<!-- MENÚ -->
+<section id="menu-nocturno" class="menu">
+  <h2 class="titulo-menu-dia" >Nuestra cocina de noche</h2>
+  <p class="intro">
+    Cocina de producto, platillos pensados para compartir y disfrutar sin prisas.
+  </p>
+  <p class="micro-info">Cenas jueves y viernes</p>
+  <div class="menu-wrapper">  
+    
+    <div class="menu-nocturno-container">      
+      
+        <article class="menu-text">    
+            
+            <h3 class="titulo-nocturno">Entrantes y Tapas</h3>
+            <p class="subtitulo-mn">Bocados crujientes y clásicos reversionados para abrir el apetito</p>
+            <ul>
+              <li>
+                <span class="plato">Pan de coca con tomate</span>
+                <span class="precio">3</span>
+                <span class="simboloEuro">€</span>
+              </li>
+            
+              <li>
+                <span class="plato">Jamón ibérico</span>
+                <span class="precio">10</span>
+                <span class="simboloEuro">€</span>
+              </li>
+            
+              <li>
+                <span class="plato">Croquetas de la casa <br><span class="style-uds">4 uds</span></span>
+                <span class="precio">8</span>
+                <span class="simboloEuro">€</span>
+              </li>
+            
+              <li>
+                <span class="plato">Boniato asado con gorgonzola</span>
+                <span class="precio">9</span>
+                <span class="simboloEuro">€</span>
+              </li>
+            
+              <li>
+                <span class="plato">Queso tomino con sobrasada e higos</span>
+                <span class="precio">10</span>
+                <span class="simboloEuro">€</span>
+              </li>
+            
+              <li>
+                <span class="plato">Oreja de cerdo crujiente</span>
+                <span class="precio">9</span>
+                <span class="simboloEuro">€</span>
+              </li>
+            </ul>
+          </article>    
+        <figure class="dish-figure">
+        
+                  <img src="IMG/entrante-nocturno.jpg" alt="entrante nocturno">
+        
+                  <figcaption class="dish-caption">Coca crujiente, camembert, burrata, paleta ibérica, yema y trufa fresca</figcaption>
+        
+        </figure>
+    </div>
+  
+    <div class="menu-nocturno-container" id="inverso">  
+        <article class="menu-text">        
+            <h3 class="titulo-nocturno">Del Mar</h3>
+            <p class="subtitulo-mn">Producto fresco de la lonja con un toque atrevido</p>
+            <ul>
+              <li>
+                <span class="plato">Corvina marinada con uva y romesco</span>
+                <span class="precio">14</span>
+                <span class="simboloEuro">€</span>
+              </li>
+          
+              <li>
+                <span class="plato">Roll de atún rojo y kimchi</span>
+                <span class="precio">14</span>
+                <span class="simboloEuro">€</span>
+              </li>
+          
+              <li>
+                <span class="plato">Zamburiñas al horno con foie</span>
+                <span class="precio">12</span>
+                <span class="simboloEuro">€</span>
+              </li>
+          
+              <li>
+                <span class="plato">Arroz de gamba roja y ceps</span>
+                <span class="precio">16</span>
+                <span class="simboloEuro">€</span>
+              </li>
+          
+              <li>
+                <span class="plato">Calamares salteados con habitas</span>
+                <span class="precio">13</span>
+                <span class="simboloEuro">€</span>
+              </li>
+            </ul>
+        </article>
+        <figure class="dish-figure">
+        
+              <img src="IMG/platillo-nocturno-2.jpg" alt="Plato del menú del día">
+        
+              <figcaption class="dish-caption">Bonito marinado con ajoblanco y uvas</figcaption>
+          </figure>
+    </div>      
+
+    <div class="menu-nocturno-container">  
+          <article class="menu-text">
+            <h3 class="titulo-nocturno">Carnes y Especialidades</h3>
+            <p class="subtitulo-mn">Cortes selecionados cocciones lentas y bocados de puro placer carnívoro</p>
+            <ul>
+              <li>
+                <span class="plato">Montadito de steak tartar <br><span class="style-uds">2 uds</span></span>
+                <span class="precio">10</span>
+                <span class="simboloEuro">€</span>
+              </li>
+            
+              <li>
+                <span class="plato">Tataki de vaca madurada</span>
+                <span class="precio">17</span>
+                <span class="simboloEuro">€</span>
+              </li>
+            
+              <li>
+                <span class="plato">Pepito de ternera "Café de París"</span>
+                <span class="precio">12</span>
+                <span class="simboloEuro">€</span>
+              </li>
+            
+              <li>
+                <span class="plato">Canelón de pato y foie</span>
+                <span class="precio">12</span>
+                <span class="simboloEuro">€</span>
+              </li>
+            
+              <li>
+                <span class="plato">Gyozas de pies de cerdo <br><span class="style-uds">4 uds</span></span>
+                <span class="precio">10</span>
+                <span class="simboloEuro">€</span>
+              </li>
+            
+              <li>
+                <span class="plato">Tacos de panceta teriyaki <br><span class="style-uds">2 uds</span></span>
+                <span class="precio">12</span>
+                <span class="simboloEuro">€</span>
+              </li>
+            </ul>
+        </article>
+        <figure class="dish-figure">        
+              <img src="IMG/latillo-nocturno-montaña.jpg" alt="Plato de carne del manu nocturno">
+        
+              <figcaption class="dish-caption" >Cebollas asadas rellenas de rabo de vaca, jugo de trompetas de la muerte y emulsión de pesto de pistachos</figcaption>
+        </figure>
+    </div>
+  </div>    
+</section>
+
+<!-- CTA -->
+
+<section class="cta">
+  <!-- <h2>Ven a compartir nuestra cocina de noche</h2> -->
+  <a href="https://wa.me/34600000000">Reserva directa por <strong class="goldDos">WhatsApp →</strong></a>
+</section>
+
+
+
+    <section class="seccion-testimonios">
+
+  <!-- resumen Google -->
+  <div class="google-rating-resumen">
+    <span class="nota-google">4.7</span>
+    <span class="estrellas-g">★★★★★</span>
+    <span class="total-resenas">(Más de 750 opiniones en Google)</span>
+  </div>
+
+  <!-- VIEWPORT (lo visible) -->
+  <div class="testimonios-viewport">
+
+    <!-- TRACK (lo que se mueve) -->
+    <div class="testimonios-track">
+
+      <div class="tarjeta-testimonio ">
+        <div class="estrellas-cliente">★★★★★</div>
+        <p class="texto-testimonio">
+          Uno de los mejores restaurantes del barrio, lo hemos descubierto hace poco y ya hemos ido varias veces. La calidad de los productos es inmejorable y el trato buenísimo. Uno de nuestros preferidos sin duda.
+        </p>
+        <span class="autor-testimonio">— Vicky Garcia</span>
+      </div>
+
+      <div class="tarjeta-testimonio ">
+        <div class="estrellas-cliente">★★★★★</div>
+        <p class="texto-testimonio">
+          Primer día que vamos y no será el ultimo. Nos ha maravillado la comida, con su originalidad, saludable y exquisito desarrollo. Los dueños, una familia encantadora, nos ha hecho sentir súper cómodos. Mejor reservar, al ser chiquitito, se llena siempre
+        </p>
+        <span class="autor-testimonio">— Gloria Soriano</span>
+      </div>
+
+      <div class="tarjeta-testimonio ">
+        <div class="estrellas-cliente">★★★★★</div>
+        <p class="texto-testimonio">
+          Restaurante con comida precio/calidad de 10! Menú de medio día con bastantes platos y postres de locos! Servicio muy rápido! Para volver sin duda 1000 veces más!
+        </p>
+        <span class="autor-testimonio">— Frank M. B.</span>
+      </div>
+
+      <div class="tarjeta-testimonio">
+        <div class="estrellas-cliente">★★★★★</div>
+        <p class="texto-testimonio">
+          Comimos el menú de mediodía. De las mejores veces que he comido fuera de casa. Nos fuimos súper contentos, la atención es muy buena y rápida.
+        </p>
+        <span class="autor-testimonio">— Esther Chamadoira</span>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- CONTROLES -->
+  <div class="slider-controls">
+    <button class="prev" aria-label="Anterior">‹</button>
+    <button class="next" aria-label="Siguiente">›</button>
+  </div>
+
+</section>
+
+<section id="ig">
+  <!-- <div>
+    <p>¿Te has quedado con ganas de más? Sigue nuestro día a día, <strong class="bold">platos fuera de carta</strong> y ambiente de nuestra <strong class="bold">cocina en vivo</strong> y mucho más!
+  </div> -->
+  <article class="instagram-discovery">
+
+    <p class="instagram-mini-title">
+      ¿Que se cuece hoy?
+    </p>
+
+    <a href="https://www.instagram.com/laforquilla9/"
+       target="_blank">
+
+       Descubre más en <strong class="ig-gold">Instagram -></strong>
+      
+    </a>
+    
+  </article>
+</section>
+
+
+<!-- </section> -->
+
+
+<section class="map">
+    <h2>Te esperamos en Nou Barris</h2>
+    <p>Restaurante en Carrer de la Font d'en Canyelles, 88, Barcelona</p>
+
+ <iframe 
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2990.913529366982!2d2.1729358150665283!3d41.44109788376519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4bd1801143e2f%3A0x1feefabfe9feeb59!2sLa%20Forquilla!5e0!3m2!1ses!2ses!4v1778260636316!5m2!1ses!2ses"
+width="600"
+height="450"
+style="border:0;"
+allowfullscreen=""
+loading="lazy"
+referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+
+</section>
+
+
+</main>
+
+<!-- FOOOOOTEER -->
+
+<footer class="footer">
+
+    <div class="footer-brand">
+      <h4>La Forquilla</strong></h4>
+      <p>Cocina de mercado · Tapas · Menú del día</p>
+    </div>
+  
+    <div class="footer-contact">
+      <h4>Dirección</h4>
+      <p>
+          <svg class="lf-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Cómo llegar">
+            <path d="M16 3C11.58 3 8 6.58 8 11C8 17 16 27 16 27C16 27 24 17 24 11C24 6.58 20.42 3 16 3Z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+            <circle cx="16" cy="11" r="3" stroke="currentColor" stroke-width="1.5" fill="none"/>
+          </svg>
+        <a href="https://maps.google.com/?q=Carrer+de+la+Font+d'en+Canyelles+88+Barcelona"
+           target="_blank">
+           Carrer de la Font d'en Canyelles, 88 · Barcelona
+        </a>
+      </p>
+
+      <p>
+        <svg class="lf-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Llamar">
+          <path d="M6 5C6 4.45 6.45 4 7 4H11C11.5 4 11.9 4.33 12.05 4.82L13.2 8.82C13.33 9.27 13.17 9.75 12.8 10.03L10.8 11.5C12.1 14.3 14 16.2 16.5 17.2L18 15.2C18.28 14.83 18.76 14.67 19.21 14.8L23.21 15.95C23.7 16.1 24 16.5 24 17V21C24 21.55 23.55 22 23 22C13.06 22 5 13.94 5 4C5 4.45 5.45 5 6 5Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" fill="none"/>
+        </svg>
+        <a href="tel:+34932764005">
+          Llamar +34 932 76 40 05
+        </a>
+      </p>
+
+      <p>
+        <svg class="lf-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Reservar por WhatsApp">
+          <path d="M16 3C9.37 3 4 8.15 4 14.5C4 16.8 4.7 18.94 5.9 20.73L4.5 27L11.03 25.6C12.56 26.5 14.22 27 16 27C22.63 27 28 21.85 28 15.5C28 9.15 22.63 3 16 3Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" fill="none"/>
+          <path d="M11 12.5C11 12.5 11.6 11 12.8 11.6L14 13.2C14 13.2 13.4 13.8 12.8 14.4C12.8 14.4 14.2 16.8 17 18.2C17.6 17.6 18.2 17 18.2 17L19.8 18.2C20.4 19.4 18.8 20 18.8 20C16.4 21 11 16.5 11 12.5Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round" fill="none"/>
+        </svg>
+        <a href="https://wa.me/34932764005" target="_blank">
+          Reservas por WhatsApp
+        </a>
+      </p>
+      
+    </div>
+  
+    <div class="footer-hours">
+      
+      <h4><strong>Horario</strong></h4>
+      <p>L-X: 13:00 - 16:30</p>
+      <p>J-V: 13:00 - 16:30 · 20:00 - 23:30</p>
+    </div>
+  
+    <div class="footer-social">
+      <h4><strong>Síguenos</strong></h4>
+    
+      <div class="social-icons">
+        
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/laforquilla9/" target="_blank" class="social-icon" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2c1.65 0 3 1.35 3 3v10c0 1.65-1.35 3-3 3H7c-1.65 0-3-1.35-3-3V7c0-1.65 1.35-3 3-3h10zm-5 3.5A4.5 4.5 0 1 0 16.5 12 4.5 4.5 0 0 0 12 7.5z"/>
+          </svg>
+        </a>
+      
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/LaForquilla" target="_blank" class="social-icon" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M22 12a10 10 0 1 0-11.5 9.9v-7H8v-3h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.8-1.6 1.5V12H17l-.5 3h-2v7A10 10 0 0 0 22 12z"/>
+          </svg>
+        </a>
+      
+        
+      </div>
+      <p>Restaurante de cocina de mercado en Barcelona</p>
+    </div>
+
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+<script src="JS/script.js"></script>
+</body>
+</html>
